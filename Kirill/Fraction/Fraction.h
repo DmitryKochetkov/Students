@@ -35,4 +35,13 @@ public:
 
         return *res;
     }
+
+    const bool operator< (const Fraction& f2) {
+        int numenator1 = x * f2.y;
+        int numenator2 = f2.x * y;
+
+        return numenator1 < numenator2;
+    }
+
+
 };
